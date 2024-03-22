@@ -1,5 +1,5 @@
 import { newComponent } from "frontlessjs/component";
-import { row, link, text } from "frontlessjs/material"
+import { row, text } from "frontlessjs/material"
 
 export default newComponent(class {
     render() {
