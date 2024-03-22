@@ -1,0 +1,10 @@
+{
+    "name": "create-frontless-app",
+    "version": "0.1.4",
+    "bin": {
+        "create-my-template": "./index.js"
+    },
+    "dependencies": {
+        "cross-spawn": "^7.0.3"
+    }
+}
