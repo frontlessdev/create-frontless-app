@@ -5,10 +5,10 @@ export default newPage(class {
     render() {
         return center(
             row([
-                icon("hand-waving", "2x"),
+                icon("hand-waving", { size: "2x" }),
                 column([
                     text('Hello!', { size: "2x" }),
-                    text('/pages/index.ts',{color:'#3ea84c'})
+                    text('/pages/index.ts', { color: '#3ea84c' })
                 ])
             ])
         )

@@ -6,6 +6,12 @@ const fs = require('fs');
 const path = require('path');
 const { log } = console;
 
+// check command
+let installCmd = 'npm'
+if (process.argv[0].match(/bun$/)) {
+    installCmd = 'bun'
+}
+
 // Get project name from command line arguments
 const projectName = process.argv[2];
 if (!projectName) {
@@ -39,7 +45,7 @@ try {
     );
 
     // Install project dependencies using npm
-    let res = spawn.sync('npm', ['install'], { stdio: 'inherit', cwd: projectDir });
+    let res = spawn.sync(installCmd, ['install'], { stdio: 'inherit', cwd: projectDir });
     // Check if installation failed
     if (res.err) {
         console.log('Failed to install')
