@@ -1,7 +1,7 @@
 {
   "name": "frontlessjsapp",
   "dependencies": {
-    "frontlessjs": "^0.1.0",
+    "@frontless/js": "npm:@jsr/frontless__js",
     "dotenv": "^16.4.5"
   },
   "devDependencies": {

@@ -1,5 +1,4 @@
 import header from "@/components/header"
-import footer from "@/components/footer"
 export default async function (body: string): Promise<string> {
     return `<!doctype html><html>
 <head>
@@ -8,11 +7,10 @@ export default async function (body: string): Promise<string> {
 <title>Hello World</title>
 </head>
 <body>
-${await header()}
+${(await header()).html()}
 <div id="main">
 ${body}
 </div>
-${await footer()}
 </body>
 </html>
 `}

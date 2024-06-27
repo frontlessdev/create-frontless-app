@@ -1,11 +1,6 @@
-import { newComponent } from "frontlessjs/component";
-import { row, text } from "frontlessjs/material"
+import { Component } from "@frontless/js";
+import { text, center } from "@frontless/js/material"
 
-export default newComponent(class {
-    render() {
-        return row([
-            text('/components/header.ts',{color:'#3ea84c'}),
-            text('user panel here')
-        ], { mainAxis: "space-between", padding: 10, style: { background: "#eee" } })
-    }
+export default Component(function header() {
+    return center(text('Header file: /components/header.ts'))
 })
