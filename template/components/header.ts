@@ -1,6 +1,6 @@
-import { Component } from "@frontless/js";
-import { text, center } from "@frontless/js/material"
+import { Component, Widget } from "frontlessjs";
+import { text, center } from "frontlessjs/material"
 
-export default Component(function header() {
+export default Component(async function header(): Promise<Widget> {
     return center(text('Header file: /components/header.ts'))
 })

@@ -1,3 +1,3 @@
-import Frontless from "@frontless/js";
+import Frontless from "frontlessjs";
 let app = Frontless()
 app.listen(3000)

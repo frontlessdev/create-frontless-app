@@ -1,9 +1,0 @@
-{
-    "watch": [
-        "server.ts",
-        "./pages/",
-        "./components/"
-    ],
-    "exec": "bun server.ts",
-    "ext": "ts,js, css"
-}
