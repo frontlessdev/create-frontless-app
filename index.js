@@ -28,7 +28,7 @@ try {
     fs.mkdirSync(projectDir, { recursive: true });
 
     // Define path of template directory
-    const templateDir = path.resolve(process.meta.dirname, 'template');
+    const templateDir = path.resolve(import.meta.dirname, 'template');
     // Copy template directory to project directory, recursive option ensures copying of all subdirectories and files
     fs.cpSync(templateDir, projectDir, { recursive: true });
 
