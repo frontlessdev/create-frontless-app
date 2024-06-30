@@ -1,6 +1,6 @@
 {
     "name": "create-frontless-app",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "bin": {
         "create-my-template": "./index.js"
     },
